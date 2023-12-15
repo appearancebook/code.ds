@@ -215,8 +215,8 @@ void SLDestroy(SLTNode** pphead)
 	while (gp)
 	{
 		SLTNode* p = gp->next;
-		gp->next = NULL;
 		free(gp);
 		gp = p;
 	}
+	*pphead = NULL;
 }
