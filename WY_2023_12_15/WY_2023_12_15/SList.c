@@ -47,12 +47,14 @@ void SLPushBack(SLTNode** pphead, SLTDataType x)
 	SLTNode* newnode = BuyLTNode(x);
 
 	//空链表
-	//非空链表
+	
 	if (*pphead == NULL)
 	{
 		*pphead = newnode;// 链表开辟第一个结构体，
 	}                     // 改变结构的指针plist，使其指向第一个结构体
 
+	//非空链表
+	// 找倒数第一个的位置
 	else
 	{
 		SLTNode* tail = *pphead;
@@ -67,6 +69,7 @@ void SLPushBack(SLTNode** pphead, SLTDataType x)
 
 }
 
+//找第一个
 void SLPopFront(SLTNode** pphead)
 {
 	assert(pphead);
@@ -96,6 +99,7 @@ void SLPopFront(SLTNode** pphead)
 
 }
 
+// 找倒数第二个
 void SLPopBack(SLTNode** pphead)
 {
 	assert(pphead);
@@ -141,6 +145,7 @@ SLTNode* SLFind(SLTNode** pphead, SLTDataType x)
 }
 
 // 在pos之前插入
+// 找pos之前的第一个位置
 void SLInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x)
 {
 	assert(pphead);
@@ -164,6 +169,7 @@ void SLInsert(SLTNode** pphead, SLTNode* pos, SLTDataType x)
 }
 
 // 在pos之后插入
+// 直接在pos后面插
 void SLInsertAfter(SLTNode* pos, SLTDataType x)
 {
 	assert(pos);
@@ -174,6 +180,7 @@ void SLInsertAfter(SLTNode* pos, SLTDataType x)
 }
 
 // 删除pos位置的值
+// 找到pos之前的第一个位置
 void SLErase(SLTNode** pphead, SLTNode* pos)
 {
 	assert(pphead);
@@ -194,6 +201,7 @@ void SLErase(SLTNode** pphead, SLTNode* pos)
 }
 
 // 删除pos位置后面的值
+// 直接删
 void SLEraseAfter(SLTNode* pos)
 {
 	assert(pos);

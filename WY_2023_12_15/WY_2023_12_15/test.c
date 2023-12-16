@@ -20,11 +20,11 @@ void TestList2()
 {
 	SLTNode* plist = NULL;
 
-	SLPushFront(&plist, 9);
-	SLPushFront(&plist, 18);
-	SLPushFront(&plist, 27);
-	SLPushFront(&plist, 36);
-	SLTPrint(&plist);
+	//SLPushFront(&plist, 9);
+	//SLPushFront(&plist, 18);
+	//SLPushFront(&plist, 27);
+	//SLPushFront(&plist, 36);
+	//SLTPrint(&plist);
 
 	SLPushBack(&plist, 9);
 	SLTPrint(&plist);
@@ -137,12 +137,12 @@ void TestList7()
 int main()
 {
 	//TestList1();
-	//TestList2();
+	TestList2();
 	//TestList3();
 	//TestList4();
 	//TestList5();
 	//TestList6();
-	TestList7();
+	//TestList7();
 
 	return 0;
 }
