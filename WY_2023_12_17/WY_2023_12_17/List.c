@@ -4,8 +4,38 @@
 
 LTNode* BuyLTNode(x)
 {
-	LTNode* 
+	LTNode* newnode = (LTNode*)malloc(sizeof(LTNode));
+	if (newnode == NULL)
+	{
+		perror("BuyLTNode malloc");
+		return NULL;
+	}
+	newnode->data = x;
+	newnode->next = NULL;
+	newnode->prev = NULL;
+	return newnode;
 }
+
+LTNode* LTInit()
+{
+	LTNode* newnode = BuyLTNode(-1);
+	newnode->prev = newnode;
+	newnode->next = newnode;
+	
+	return newnode;
+}
+
+void LTPrint(LTNode* phead)
+{
+	LTNode* cur = phead->next;
+	while (cur != phead)
+	{
+		printf("%d->", cur->data);
+		cur = cur->next;
+	}
+	printf("%d\n", phead->data);
+}
+
 
 void LTPushBack(LTNode* phead, SLDatatype x)
 {

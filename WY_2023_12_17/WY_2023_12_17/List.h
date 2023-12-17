@@ -13,7 +13,9 @@ typedef struct ListNode
 	SLDatatype data;
 }LTNode;
 
-void LTInit(LTNode* phead);
+LTNode* LTInit();
+
+void LTPrint(LTNode* phead);
 
 void LTPushBack(LTNode* phead, SLDatatype x);
 

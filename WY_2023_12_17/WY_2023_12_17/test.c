@@ -4,7 +4,11 @@
 
 void testlist1()
 {
-	LTNode* plist
+	LTNode* plist = LTInit();
+	LTPushBack(plist, 9);
+	LTPushBack(plist, 18);
+	LTPushBack(plist, 27);
+	LTPrint(plist);
 }
 
 
