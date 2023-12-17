@@ -116,7 +116,7 @@ void testlist7()
 	SLTPrint(&plist);
 
 	SLDestroy(&plist);
-	SLTPrint(&plist);
+	//SLTPrint(&plist);
 }
 
 int main()

@@ -201,12 +201,12 @@ void SLEraseAfter(SLTNode* pos)
 void SLDestroy(SLTNode** pphead)
 {
 	assert(pphead);
-	assert(*pphead);
-	SLTNode* p = *pphead;
-	while (p)
+	
+	SLTNode* cur = *pphead;
+	while (cur)
 	{
-		SLTNode* gp = p;
-		p = p->next;
+		SLTNode* gp = cur;
+		cur = cur->next;
 		free(gp);
 	}
 	*pphead = NULL;
