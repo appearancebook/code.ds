@@ -58,9 +58,20 @@ void QueuePop(Queue* pq)
 	assert(pq);
 	assert(!QueueEmpty(pq));
 
-	QNode* next = pq->phead->next;
-	free(pq->phead);
-	pq->phead = next;
+	//1、一个节点
+	//2、多个节点
+	if (pq->phead->next == NULL)
+	{
+		free(pq->phead);
+		pq->phead = NULL;
+		pq->ptail = NULL;
+	}
+	else
+	{
+		QNode* next = pq->phead->next;
+		free(pq->phead);
+		pq->phead = next;
+	}
 	pq->size--;
 }
 
