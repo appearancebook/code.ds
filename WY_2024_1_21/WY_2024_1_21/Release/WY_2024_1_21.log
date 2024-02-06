@@ -1,0 +1,9 @@
+﻿  Sort.c
+  test.c
+D:\code.ds\WY_2024_1_21\WY_2024_1_21\test.c(87,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码
+  5 of 8 functions (62.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  WY_2024_1_21.vcxproj -> D:\code.ds\WY_2024_1_21\Release\WY_2024_1_21.exe

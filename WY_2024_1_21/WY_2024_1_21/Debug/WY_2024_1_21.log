@@ -1,0 +1,7 @@
+﻿  Sort.c
+  stack.c
+  test.c
+D:\code.ds\WY_2024_1_21\WY_2024_1_21\test.c(58,2): warning C4013: “QuickSortNonR”未定义；假设外部返回 int
+D:\code.ds\WY_2024_1_21\WY_2024_1_21\test.c(77,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  WY_2024_1_21.vcxproj -> D:\code.ds\WY_2024_1_21\Debug\WY_2024_1_21.exe
